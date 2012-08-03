@@ -57,3 +57,9 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+services:
+    api.ducksboard:
+        class: SFM\DucksboardBundle\Adapter\Widget
+        calls:
+            - [setApiKey, [%ducksboard_api%]]
