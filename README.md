@@ -1,4 +1,4 @@
-Caniol 
+sf-concepts
 =======
 
-Symfony2 
+Proof of concept with symfony2

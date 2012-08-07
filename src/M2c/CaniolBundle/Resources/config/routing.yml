@@ -1,0 +1,3 @@
+CaniolBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: CaniolBundle:Default:index }

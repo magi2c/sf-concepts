@@ -1,0 +1,7 @@
+parameters:
+#    caniol.example.class: M2c\CaniolBundle\Example
+
+services:
+#    caniol.example:
+#        class: %caniol.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
