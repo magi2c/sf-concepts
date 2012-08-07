@@ -5,12 +5,12 @@ namespace M2c\CaniolBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * M2c\CaniolBundle\Entity\Story
+ * M2c\CaniolBundle\Entity\Vignette
  *
  * @ORM\Table()
  * @ORM\Entity
  */
-class Story
+class Vignette
 {
     /**
      * @var integer $id
@@ -22,14 +22,11 @@ class Story
     private $id;
 
     /**
-     * @ORM\Column(name="name", type="string", length=255)
+     * @var integer $orden
+     *
+     * @ORM\Column(name="orden", type="integer")
      */
-    private $name;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="M2c\CaniolBundle\Entity\User")
-     */
-    private $user;
+    private $orden;
 
     /**
      * @ORM\ManyToOne(targetEntity="M2c\CaniolBundle\Entity\Image")
@@ -46,10 +43,6 @@ class Story
      */
     private $message;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="M2c\CaniolBundle\Entity\Vignette")
-     */
-    private $vignette;
 
 
     /**
@@ -63,33 +56,33 @@ class Story
     }
 
     /**
-     * Set name
+     * Set orden
      *
-     * @param string $name
-     * @return Story
+     * @param integer $orden
+     * @return Vignette
      */
-    public function setName($name)
+    public function setOrden($orden)
     {
-        $this->name = $name;
+        $this->orden = $orden;
     
         return $this;
     }
 
     /**
-     * Get name
+     * Get orden
      *
-     * @return string 
+     * @return integer 
      */
-    public function getName()
+    public function getOrden()
     {
-        return $this->name;
+        return $this->orden;
     }
 
     /**
      * Set image
      *
      * @param string $image
-     * @return Story
+     * @return Vignette
      */
     public function setImage($image)
     {
@@ -112,7 +105,7 @@ class Story
      * Set sound
      *
      * @param string $sound
-     * @return Story
+     * @return Vignette
      */
     public function setSound($sound)
     {
@@ -129,5 +122,51 @@ class Story
     public function getSound()
     {
         return $this->sound;
+    }
+
+    /**
+     * Set message
+     *
+     * @param string $message
+     * @return Vignette
+     */
+    public function setMessage($message)
+    {
+        $this->message = $message;
+    
+        return $this;
+    }
+
+    /**
+     * Get message
+     *
+     * @return string 
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * Set story
+     *
+     * @param string $story
+     * @return Vignette
+     */
+    public function setStory($story)
+    {
+        $this->story = $story;
+    
+        return $this;
+    }
+
+    /**
+     * Get story
+     *
+     * @return string 
+     */
+    public function getStory()
+    {
+        return $this->story;
     }
 }
