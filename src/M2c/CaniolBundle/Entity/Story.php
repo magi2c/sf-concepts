@@ -52,6 +52,8 @@ class Story
     private $vignette;
 
 
+   
+
     /**
      * Get id
      *
@@ -86,12 +88,35 @@ class Story
     }
 
     /**
-     * Set image
+     * Set user
      *
-     * @param string $image
+     * @param M2c\CaniolBundle\Entity\User $user
      * @return Story
      */
-    public function setImage($image)
+    public function setUser(\M2c\CaniolBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return M2c\CaniolBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set image
+     *
+     * @param M2c\CaniolBundle\Entity\Image $image
+     * @return Story
+     */
+    public function setImage(\M2c\CaniolBundle\Entity\Image $image = null)
     {
         $this->image = $image;
     
@@ -101,7 +126,7 @@ class Story
     /**
      * Get image
      *
-     * @return string 
+     * @return M2c\CaniolBundle\Entity\Image 
      */
     public function getImage()
     {
@@ -111,10 +136,10 @@ class Story
     /**
      * Set sound
      *
-     * @param string $sound
+     * @param M2c\CaniolBundle\Entity\Sound $sound
      * @return Story
      */
-    public function setSound($sound)
+    public function setSound(\M2c\CaniolBundle\Entity\Sound $sound = null)
     {
         $this->sound = $sound;
     
@@ -124,10 +149,56 @@ class Story
     /**
      * Get sound
      *
-     * @return string 
+     * @return M2c\CaniolBundle\Entity\Sound 
      */
     public function getSound()
     {
         return $this->sound;
+    }
+
+    /**
+     * Set message
+     *
+     * @param M2c\CaniolBundle\Entity\Message $message
+     * @return Story
+     */
+    public function setMessage(\M2c\CaniolBundle\Entity\Message $message = null)
+    {
+        $this->message = $message;
+    
+        return $this;
+    }
+
+    /**
+     * Get message
+     *
+     * @return M2c\CaniolBundle\Entity\Message 
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * Set vignette
+     *
+     * @param M2c\CaniolBundle\Entity\Vignette $vignette
+     * @return Story
+     */
+    public function setVignette(\M2c\CaniolBundle\Entity\Vignette $vignette = null)
+    {
+        $this->vignette = $vignette;
+    
+        return $this;
+    }
+
+    /**
+     * Get vignette
+     *
+     * @return M2c\CaniolBundle\Entity\Vignette 
+     */
+    public function getVignette()
+    {
+        return $this->vignette;
     }
 }

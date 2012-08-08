@@ -45,6 +45,7 @@ class Vignette
 
 
 
+
     /**
      * Get id
      *
@@ -81,10 +82,10 @@ class Vignette
     /**
      * Set image
      *
-     * @param string $image
+     * @param M2c\CaniolBundle\Entity\Image $image
      * @return Vignette
      */
-    public function setImage($image)
+    public function setImage(\M2c\CaniolBundle\Entity\Image $image = null)
     {
         $this->image = $image;
     
@@ -94,7 +95,7 @@ class Vignette
     /**
      * Get image
      *
-     * @return string 
+     * @return M2c\CaniolBundle\Entity\Image 
      */
     public function getImage()
     {
@@ -104,10 +105,10 @@ class Vignette
     /**
      * Set sound
      *
-     * @param string $sound
+     * @param M2c\CaniolBundle\Entity\Sound $sound
      * @return Vignette
      */
-    public function setSound($sound)
+    public function setSound(\M2c\CaniolBundle\Entity\Sound $sound = null)
     {
         $this->sound = $sound;
     
@@ -117,7 +118,7 @@ class Vignette
     /**
      * Get sound
      *
-     * @return string 
+     * @return M2c\CaniolBundle\Entity\Sound 
      */
     public function getSound()
     {
@@ -127,10 +128,10 @@ class Vignette
     /**
      * Set message
      *
-     * @param string $message
+     * @param M2c\CaniolBundle\Entity\Message $message
      * @return Vignette
      */
-    public function setMessage($message)
+    public function setMessage(\M2c\CaniolBundle\Entity\Message $message = null)
     {
         $this->message = $message;
     
@@ -140,33 +141,10 @@ class Vignette
     /**
      * Get message
      *
-     * @return string 
+     * @return M2c\CaniolBundle\Entity\Message 
      */
     public function getMessage()
     {
         return $this->message;
-    }
-
-    /**
-     * Set story
-     *
-     * @param string $story
-     * @return Vignette
-     */
-    public function setStory($story)
-    {
-        $this->story = $story;
-    
-        return $this;
-    }
-
-    /**
-     * Get story
-     *
-     * @return string 
-     */
-    public function getStory()
-    {
-        return $this->story;
     }
 }
