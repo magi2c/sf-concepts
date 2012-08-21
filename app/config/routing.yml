@@ -1,3 +1,7 @@
+FrontalBundle:
+    resource: "@FrontalBundle/Resources/config/routing.yml"
+    prefix:   /
+
 CaniolBundle:
     resource: "@CaniolBundle/Resources/config/routing.yml"
     prefix:   /

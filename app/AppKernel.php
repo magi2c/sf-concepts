@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new SFM\DucksboardBundle\SFMDucksboardBundle(),
             new M2c\CaniolBundle\CaniolBundle(),
+            new M2c\FrontalBundle\FrontalBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

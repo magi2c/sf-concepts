@@ -1,0 +1,7 @@
+parameters:
+#    frontal.example.class: M2c\FrontalBundle\Example
+
+services:
+#    frontal.example:
+#        class: %frontal.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
