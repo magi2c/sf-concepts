@@ -6,8 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function portadaAction()
     {
-        return $this->render('FrontalBundle:Default:index.html.twig', array('name' => $name));
+        $peticion = $this->getRequest();
+        
+
+        return $this->render('FrontalBundle:Default:portal.html.twig', array(
+            'entities'      => array(),
+            'form_filter'   => array()
+        ));
     }
 }

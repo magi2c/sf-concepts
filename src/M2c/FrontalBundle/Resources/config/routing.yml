@@ -1,3 +1,11 @@
 FrontalBundle_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: FrontalBundle:Default:index }
+
+FrontalBundle_portada:
+    pattern:  /
+    defaults: { _controller: FrontalBundle:Default:portada }
+
+FrontalBundle_portada_buscador:
+    pattern:  /search/{filter}
+    defaults: { _controller: FrontalBundle:Default:portada }

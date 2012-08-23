@@ -63,3 +63,4 @@ services:
         class: SFM\DucksboardBundle\Adapter\Widget
         calls:
             - [setApiKey, [%ducksboard_api%]]
+            
